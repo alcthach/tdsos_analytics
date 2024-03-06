@@ -1,0 +1,354 @@
+[0m10:10:09.074828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39c0093590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39c0df1b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39c06b6f50>]}
+
+
+============================== 10:10:09.080933 | 291ed667-ae1a-4ce5-8bd8-c8e65c1e0bcd ==============================
+[0m10:10:09.080933 [info ] [MainThread]: Running with dbt=1.7.6
+[0m10:10:09.081351 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/athach/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt init', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:10:09.081692 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/athach/.dbt')}
+[0m10:10:09.081970 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m10:10:18.095289 [debug] [MainThread]: Starter project path: /home/athach/dbt-env/lib/python3.11/site-packages/dbt/include/starter_project
+[0m10:10:18.101177 [info ] [MainThread]: 
+Your new dbt project "toronto_daily_shelter_overnight_services" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:10:18.101477 [info ] [MainThread]: Setting up your profile.
+[0m10:13:30.837172 [info ] [MainThread]: Profile toronto_daily_shelter_overnight_services written to /home/athach/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m10:13:30.839377 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 201.76555, "process_user_time": 1.213949, "process_kernel_time": 0.056275, "process_mem_max_rss": "106604", "process_in_blocks": "472", "process_out_blocks": "88"}
+[0m10:13:30.840430 [debug] [MainThread]: Command `dbt init` succeeded at 10:13:30.840164 after 201.77 seconds
+[0m10:13:30.841109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39c070a750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39c07191d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f39c05054d0>]}
+[0m10:13:30.841559 [debug] [MainThread]: Flushing usage events
+[0m10:13:38.976479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95b4516390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95b523d910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95b494e150>]}
+
+
+============================== 10:13:38.978384 | 211f0811-7ccf-4fbe-962e-c054430fe573 ==============================
+[0m10:13:38.978384 [info ] [MainThread]: Running with dbt=1.7.6
+[0m10:13:38.978810 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/athach/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:13:38.979236 [info ] [MainThread]: dbt version: 1.7.6
+[0m10:13:38.979530 [info ] [MainThread]: python version: 3.11.2
+[0m10:13:38.979811 [info ] [MainThread]: python path: /home/athach/dbt-env/bin/python
+[0m10:13:38.980085 [info ] [MainThread]: os info: Linux-6.1.0-17-amd64-x86_64-with-glibc2.36
+[0m10:13:39.035107 [info ] [MainThread]: Using profiles dir at /home/athach/.dbt
+[0m10:13:39.035495 [info ] [MainThread]: Using profiles.yml file at /home/athach/.dbt/profiles.yml
+[0m10:13:39.035772 [info ] [MainThread]: Using dbt_project.yml file at /home/athach/projects/toronto_daily_shelter_overnight_service/dbt_project.yml
+[0m10:13:39.036153 [info ] [MainThread]: adapter type: postgres
+[0m10:13:39.036425 [info ] [MainThread]: adapter version: 1.7.6
+[0m10:13:39.036699 [info ] [MainThread]: Configuration:
+[0m10:13:39.036959 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:13:39.037215 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:13:39.037465 [info ] [MainThread]: Required dependencies:
+[0m10:13:39.037732 [debug] [MainThread]: Executing "git --help"
+[0m10:13:39.038591 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m10:13:39.038880 [info ] [MainThread]: Connection:
+[0m10:13:39.039197 [info ] [MainThread]:   host: localhost
+[0m10:13:39.039461 [info ] [MainThread]:   port: 5432
+[0m10:13:39.039710 [info ] [MainThread]:   user: postgres
+[0m10:13:39.039963 [info ] [MainThread]:   database: toronto_daily_shelter_overnight_service
+[0m10:13:39.040231 [info ] [MainThread]:   schema: analytics
+[0m10:13:39.040472 [info ] [MainThread]:   connect_timeout: 10
+[0m10:13:39.040736 [info ] [MainThread]:   role: None
+[0m10:13:39.041000 [info ] [MainThread]:   search_path: None
+[0m10:13:39.041242 [info ] [MainThread]:   keepalives_idle: 0
+[0m10:13:39.041481 [info ] [MainThread]:   sslmode: None
+[0m10:13:39.041718 [info ] [MainThread]:   sslcert: None
+[0m10:13:39.041963 [info ] [MainThread]:   sslkey: None
+[0m10:13:39.042233 [info ] [MainThread]:   sslrootcert: None
+[0m10:13:39.042516 [info ] [MainThread]:   application_name: dbt
+[0m10:13:39.042792 [info ] [MainThread]:   retries: 1
+[0m10:13:39.043074 [info ] [MainThread]: Registered adapter: postgres=1.7.6
+[0m10:13:39.043518 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m10:13:39.043775 [debug] [MainThread]: Using postgres connection "debug"
+[0m10:13:39.044042 [debug] [MainThread]: On debug: select 1 as id
+[0m10:13:39.044279 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:13:39.057486 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+[0m10:13:39.062250 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m10:13:39.062615 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m10:13:39.062948 [debug] [MainThread]: On debug: No close available on handle
+[0m10:13:39.063258 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m10:13:39.063559 [info ] [MainThread]: [31m3 checks failed:[0m
+[0m10:13:39.063832 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/athach/projects/toronto_daily_shelter_overnight_service/dbt_project.yml> not found
+
+[0m10:13:39.064106 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH: "git"
+
+[0m10:13:39.064372 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+  connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m10:13:39.065020 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.11619813, "process_user_time": 1.279179, "process_kernel_time": 0.075714, "process_mem_max_rss": "110828", "process_in_blocks": "3888", "process_out_blocks": "32", "command_success": false}
+[0m10:13:39.065418 [debug] [MainThread]: Command `dbt debug` failed at 10:13:39.065317 after 0.12 seconds
+[0m10:13:39.065680 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:13:39.065939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95b4b5ef50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95b497c3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95b3f81490>]}
+[0m10:13:39.066226 [debug] [MainThread]: Flushing usage events
+[0m10:17:37.815198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21de2f2190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21de30e4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21de30ed10>]}
+
+
+============================== 10:17:37.817072 | a7ecebad-ced9-4149-9456-3b8ce5e9bbd4 ==============================
+[0m10:17:37.817072 [info ] [MainThread]: Running with dbt=1.7.6
+[0m10:17:37.817479 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/athach/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:17:37.817847 [info ] [MainThread]: dbt version: 1.7.6
+[0m10:17:37.818136 [info ] [MainThread]: python version: 3.11.2
+[0m10:17:37.818412 [info ] [MainThread]: python path: /home/athach/dbt-env/bin/python
+[0m10:17:37.818663 [info ] [MainThread]: os info: Linux-6.1.0-17-amd64-x86_64-with-glibc2.36
+[0m10:17:37.852155 [info ] [MainThread]: Using profiles dir at /home/athach/.dbt
+[0m10:17:37.852513 [info ] [MainThread]: Using profiles.yml file at /home/athach/.dbt/profiles.yml
+[0m10:17:37.852778 [info ] [MainThread]: Using dbt_project.yml file at /home/athach/projects/toronto_daily_shelter_overnight_service/dbt_project.yml
+[0m10:17:37.853043 [info ] [MainThread]: Configuration:
+[0m10:17:37.853289 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m10:17:37.853538 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:17:37.853782 [info ] [MainThread]: Required dependencies:
+[0m10:17:37.854038 [debug] [MainThread]: Executing "git --help"
+[0m10:17:37.854782 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m10:17:37.855043 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m10:17:37.855305 [info ] [MainThread]: [31m3 checks failed:[0m
+[0m10:17:37.855550 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "toronto_daily_shelter_overnight_services", target "dev" invalid: None is not of type 'string'
+
+
+[0m10:17:37.855832 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/athach/projects/toronto_daily_shelter_overnight_service/dbt_project.yml> not found
+
+[0m10:17:37.856080 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH: "git"
+
+[0m10:17:37.856602 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.06751798, "process_user_time": 1.189618, "process_kernel_time": 0.07984, "process_mem_max_rss": "106976", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m10:17:37.856994 [debug] [MainThread]: Command `dbt debug` failed at 10:17:37.856894 after 0.07 seconds
+[0m10:17:37.857297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21de54fbd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21dfe9e650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f21de8afd90>]}
+[0m10:17:37.857601 [debug] [MainThread]: Flushing usage events
+[0m10:33:49.774946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f784c917ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f784c822750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f784ca826d0>]}
+
+
+============================== 10:33:49.776864 | 1bccac3e-a37c-4622-950a-e81155b8ec56 ==============================
+[0m10:33:49.776864 [info ] [MainThread]: Running with dbt=1.7.6
+[0m10:33:49.777299 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/home/athach/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:33:49.777697 [info ] [MainThread]: dbt version: 1.7.6
+[0m10:33:49.777981 [info ] [MainThread]: python version: 3.11.2
+[0m10:33:49.778256 [info ] [MainThread]: python path: /home/athach/dbt-env/bin/python
+[0m10:33:49.778519 [info ] [MainThread]: os info: Linux-6.1.0-17-amd64-x86_64-with-glibc2.36
+[0m10:33:49.813085 [info ] [MainThread]: Using profiles dir at /home/athach/.dbt
+[0m10:33:49.813458 [info ] [MainThread]: Using profiles.yml file at /home/athach/.dbt/profiles.yml
+[0m10:33:49.813727 [info ] [MainThread]: Using dbt_project.yml file at /home/athach/projects/toronto_daily_shelter_overnight_service/dbt_project.yml
+[0m10:33:49.813993 [info ] [MainThread]: Configuration:
+[0m10:33:49.814243 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m10:33:49.814494 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:33:49.814740 [info ] [MainThread]: Required dependencies:
+[0m10:33:49.815005 [debug] [MainThread]: Executing "git --help"
+[0m10:33:49.815758 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m10:33:49.816067 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m10:33:49.816332 [info ] [MainThread]: [31m3 checks failed:[0m
+[0m10:33:49.816593 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "toronto_daily_shelter_overnight_services", target "dev" invalid: None is not of type 'string'
+
+
+[0m10:33:49.816888 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/athach/projects/toronto_daily_shelter_overnight_service/dbt_project.yml> not found
+
+[0m10:33:49.817121 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH: "git"
+
+[0m10:33:49.817662 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.069738895, "process_user_time": 1.229619, "process_kernel_time": 0.07186, "process_mem_max_rss": "106960", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m10:33:49.818073 [debug] [MainThread]: Command `dbt debug` failed at 10:33:49.817970 after 0.07 seconds
+[0m10:33:49.818369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f784c4c7d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f784c48bd50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f784c916f50>]}
+[0m10:33:49.818696 [debug] [MainThread]: Flushing usage events
+[0m10:33:57.146541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7757ad5910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7757e27950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7758119910>]}
+
+
+============================== 10:33:57.148421 | fcdc5472-c730-4f9e-8eb0-df9cfcdf87cd ==============================
+[0m10:33:57.148421 [info ] [MainThread]: Running with dbt=1.7.6
+[0m10:33:57.148847 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/home/athach/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt init', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:34:09.225637 [debug] [MainThread]: Starter project path: /home/athach/dbt-env/lib/python3.11/site-packages/dbt/include/starter_project
+[0m10:34:09.227297 [info ] [MainThread]: 
+Your new dbt project "toronto_daily_shelter_overnight_services" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:34:09.227563 [info ] [MainThread]: Setting up your profile.
+[0m10:35:19.668659 [info ] [MainThread]: Profile toronto_daily_shelter_overnight_services written to /home/athach/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m10:35:19.670389 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 82.55101, "process_user_time": 1.247616, "process_kernel_time": 0.068197, "process_mem_max_rss": "106900", "process_out_blocks": "88", "process_in_blocks": "0"}
+[0m10:35:19.671662 [debug] [MainThread]: Command `dbt init` succeeded at 10:35:19.671373 after 82.55 seconds
+[0m10:35:19.672498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f77580a20d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f775c12ced0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7758233e50>]}
+[0m10:35:19.673240 [debug] [MainThread]: Flushing usage events
+[0m10:35:26.196069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ffdf83d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ffe3e6a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ffdfa2c90>]}
+
+
+============================== 10:35:26.197938 | baff6c8e-a9ad-4b62-8ac9-acb7c9c0b491 ==============================
+[0m10:35:26.197938 [info ] [MainThread]: Running with dbt=1.7.6
+[0m10:35:26.198326 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/athach/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:35:26.198691 [info ] [MainThread]: dbt version: 1.7.6
+[0m10:35:26.198962 [info ] [MainThread]: python version: 3.11.2
+[0m10:35:26.199226 [info ] [MainThread]: python path: /home/athach/dbt-env/bin/python
+[0m10:35:26.199474 [info ] [MainThread]: os info: Linux-6.1.0-17-amd64-x86_64-with-glibc2.36
+[0m10:35:26.250924 [info ] [MainThread]: Using profiles dir at /home/athach/.dbt
+[0m10:35:26.251279 [info ] [MainThread]: Using profiles.yml file at /home/athach/.dbt/profiles.yml
+[0m10:35:26.251530 [info ] [MainThread]: Using dbt_project.yml file at /home/athach/projects/toronto_daily_shelter_overnight_service/dbt_project.yml
+[0m10:35:26.251868 [info ] [MainThread]: adapter type: postgres
+[0m10:35:26.252144 [info ] [MainThread]: adapter version: 1.7.6
+[0m10:35:26.252404 [info ] [MainThread]: Configuration:
+[0m10:35:26.252649 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:35:26.252888 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:35:26.253124 [info ] [MainThread]: Required dependencies:
+[0m10:35:26.253368 [debug] [MainThread]: Executing "git --help"
+[0m10:35:26.254120 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m10:35:26.254413 [info ] [MainThread]: Connection:
+[0m10:35:26.254724 [info ] [MainThread]:   host: localhost
+[0m10:35:26.254960 [info ] [MainThread]:   port: 5432
+[0m10:35:26.255186 [info ] [MainThread]:   user: postgres
+[0m10:35:26.255408 [info ] [MainThread]:   database: toronto_daily_shelter_overnight_service
+[0m10:35:26.255635 [info ] [MainThread]:   schema: dev
+[0m10:35:26.255856 [info ] [MainThread]:   connect_timeout: 10
+[0m10:35:26.256100 [info ] [MainThread]:   role: None
+[0m10:35:26.256344 [info ] [MainThread]:   search_path: None
+[0m10:35:26.256610 [info ] [MainThread]:   keepalives_idle: 0
+[0m10:35:26.256833 [info ] [MainThread]:   sslmode: None
+[0m10:35:26.257215 [info ] [MainThread]:   sslcert: None
+[0m10:35:26.257472 [info ] [MainThread]:   sslkey: None
+[0m10:35:26.257690 [info ] [MainThread]:   sslrootcert: None
+[0m10:35:26.257910 [info ] [MainThread]:   application_name: dbt
+[0m10:35:26.258128 [info ] [MainThread]:   retries: 1
+[0m10:35:26.258391 [info ] [MainThread]: Registered adapter: postgres=1.7.6
+[0m10:35:26.258779 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m10:35:26.259025 [debug] [MainThread]: Using postgres connection "debug"
+[0m10:35:26.259254 [debug] [MainThread]: On debug: select 1 as id
+[0m10:35:26.259473 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:35:26.265397 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+[0m10:35:26.269682 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m10:35:26.269985 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m10:35:26.270257 [debug] [MainThread]: On debug: No close available on handle
+[0m10:35:26.270515 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m10:35:26.270788 [info ] [MainThread]: [31m3 checks failed:[0m
+[0m10:35:26.271038 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/athach/projects/toronto_daily_shelter_overnight_service/dbt_project.yml> not found
+
+[0m10:35:26.271303 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH: "git"
+
+[0m10:35:26.271548 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+  connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m10:35:26.272179 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.102206446, "process_user_time": 1.215591, "process_kernel_time": 0.059979, "process_mem_max_rss": "110896", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m10:35:26.272589 [debug] [MainThread]: Command `dbt debug` failed at 10:35:26.272487 after 0.10 seconds
+[0m10:35:26.272856 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:35:26.273123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ffdf83c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ffdfd4550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6ffe55ad90>]}
+[0m10:35:26.273451 [debug] [MainThread]: Flushing usage events
+[0m10:35:50.256548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0bf1c9fed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0bf1bfb510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0bf4081490>]}
+
+
+============================== 10:35:50.258367 | 2690332c-b5a6-4ffd-98f1-3ea530c94a72 ==============================
+[0m10:35:50.258367 [info ] [MainThread]: Running with dbt=1.7.6
+[0m10:35:50.258754 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/athach/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:35:50.259124 [info ] [MainThread]: dbt version: 1.7.6
+[0m10:35:50.259400 [info ] [MainThread]: python version: 3.11.2
+[0m10:35:50.259663 [info ] [MainThread]: python path: /home/athach/dbt-env/bin/python
+[0m10:35:50.259914 [info ] [MainThread]: os info: Linux-6.1.0-17-amd64-x86_64-with-glibc2.36
+[0m10:35:50.293105 [info ] [MainThread]: Using profiles dir at /home/athach/.dbt
+[0m10:35:50.293469 [info ] [MainThread]: Using profiles.yml file at /home/athach/.dbt/profiles.yml
+[0m10:35:50.293724 [info ] [MainThread]: Using dbt_project.yml file at /home/athach/projects/toronto_daily_shelter_overnight_service/dbt_project.yml
+[0m10:35:50.293976 [info ] [MainThread]: Configuration:
+[0m10:35:50.294217 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m10:35:50.294457 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:35:50.294692 [info ] [MainThread]: Required dependencies:
+[0m10:35:50.294943 [debug] [MainThread]: Executing "git --help"
+[0m10:35:50.295687 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m10:35:50.295954 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m10:35:50.296221 [info ] [MainThread]: [31m3 checks failed:[0m
+[0m10:35:50.296468 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "toronto_daily_shelter_overnight_services", target "dev" invalid: None is not of type 'string'
+
+
+[0m10:35:50.296730 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/athach/projects/toronto_daily_shelter_overnight_service/dbt_project.yml> not found
+
+[0m10:35:50.296968 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH: "git"
+
+[0m10:35:50.297492 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.0671328, "process_user_time": 1.207099, "process_kernel_time": 0.068175, "process_mem_max_rss": "106972", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m10:35:50.297884 [debug] [MainThread]: Command `dbt debug` failed at 10:35:50.297784 after 0.07 seconds
+[0m10:35:50.298174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0bf1dcb8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0bf1fd7e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0bf1c01490>]}
+[0m10:35:50.298458 [debug] [MainThread]: Flushing usage events
+[0m10:41:48.353679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ac068c710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ac00f6a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ac04a6550>]}
+
+
+============================== 10:41:48.355676 | 8f0901e5-9cf5-48f2-ac8f-6b446dd62239 ==============================
+[0m10:41:48.355676 [info ] [MainThread]: Running with dbt=1.7.6
+[0m10:41:48.356127 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/athach/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt init', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:42:00.125996 [debug] [MainThread]: Starter project path: /home/athach/dbt-env/lib/python3.11/site-packages/dbt/include/starter_project
+[0m10:42:00.127972 [info ] [MainThread]: 
+Your new dbt project "toronto_daily_shelter_overnight_services" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:42:00.128297 [info ] [MainThread]: Setting up your profile.
+[0m10:42:34.025528 [info ] [MainThread]: Profile toronto_daily_shelter_overnight_services written to /home/athach/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m10:42:34.027244 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 45.701363, "process_user_time": 1.262202, "process_kernel_time": 0.076132, "process_mem_max_rss": "106904", "process_out_blocks": "96", "process_in_blocks": "0"}
+[0m10:42:34.028433 [debug] [MainThread]: Command `dbt init` succeeded at 10:42:34.028063 after 45.70 seconds
+[0m10:42:34.029217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ac034e6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ac06d6390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ac0c0de90>]}
+[0m10:42:34.030030 [debug] [MainThread]: Flushing usage events

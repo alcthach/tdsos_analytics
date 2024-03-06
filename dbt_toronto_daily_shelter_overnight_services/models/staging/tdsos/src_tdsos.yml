@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: tdsos 
+    database: toronto_daily_shelter_overnight_service
+    schema: dbt_athach 
+    tables: 
+      - name: daily_shelter_occupancy_2017
+      - name: daily_shelter_occupancy_2018
+      - name: daily_shelter_occupancy_2019
+      - name: daily_shelter_occupancy_2020
+      - name: daily_shelter_overnight_service_occupancy_2021
+      - name: daily_shelter_overnight_service_occupancy_2022
+      - name: daily_shelter_overnight_service_occupancy_2023
+      - name: daily_shelter_overnight_service_occupancy_2024
