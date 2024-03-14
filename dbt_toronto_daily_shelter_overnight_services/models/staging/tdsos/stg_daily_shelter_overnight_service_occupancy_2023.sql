@@ -7,7 +7,7 @@ source as (
 ),
 
 staged as (
-	select	_id,
+	select	concat('2023', _id) as _id,
 			DATE(occupancy_date) as occupancy_date,
 			organization_id,
 			organization_name,

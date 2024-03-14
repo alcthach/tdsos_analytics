@@ -8,7 +8,7 @@ source as (
 
 staged as (
 
-		select 	_id,
+		select 	concat('2018', _id) as _id,
 			DATE(occupancy_date) as occupancy_date,
 			organization_name,
 			shelter_name,
