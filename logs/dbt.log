@@ -412,3 +412,33 @@ Runtime Error
 [0m21:39:32.327563 [debug] [MainThread]: Command `dbt run` failed at 21:39:32.327452 after 0.03 seconds
 [0m21:39:32.327873 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56f9594b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56f96ef350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56f95ba210>]}
 [0m21:39:32.328176 [debug] [MainThread]: Flushing usage events
+[0m20:51:29.102601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f553e1683d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f553e1446d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f553dea7c10>]}
+
+
+============================== 20:51:29.106128 | 5f4b5ef6-0137-435f-bc41-000f4b1e5a37 ==============================
+[0m20:51:29.106128 [info ] [MainThread]: Running with dbt=1.7.8
+[0m20:51:29.106664 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/athach/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m20:51:29.107141 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/athach/projects/toronto_daily_shelter_overnight_service/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:51:29.108164 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.03379844, "process_user_time": 1.237364, "process_kernel_time": 0.088658, "process_mem_max_rss": "102764", "process_in_blocks": "58456", "process_out_blocks": "16", "command_success": false}
+[0m20:51:29.108748 [debug] [MainThread]: Command `dbt run` failed at 20:51:29.108601 after 0.03 seconds
+[0m20:51:29.109162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f553ddd1490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f553dbc1790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f553db89e90>]}
+[0m20:51:29.109581 [debug] [MainThread]: Flushing usage events
+[0m22:05:52.718536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7d504ed90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7d5d52110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7d5031ad0>]}
+
+
+============================== 22:05:52.721335 | 10877613-d71a-4bd3-a8b1-7675fe9187af ==============================
+[0m22:05:52.721335 [info ] [MainThread]: Running with dbt=1.7.8
+[0m22:05:52.721868 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/athach/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --select daily_toatl_', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:05:52.722293 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/athach/projects/toronto_daily_shelter_overnight_service/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:05:52.723228 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.032506224, "process_user_time": 1.198492, "process_kernel_time": 0.143021, "process_mem_max_rss": "102976", "process_in_blocks": "56648", "process_out_blocks": "8", "command_success": false}
+[0m22:05:52.723673 [debug] [MainThread]: Command `dbt run` failed at 22:05:52.723558 after 0.03 seconds
+[0m22:05:52.724016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7d5679890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7d55ed4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa7d5793d50>]}
+[0m22:05:52.724387 [debug] [MainThread]: Flushing usage events
